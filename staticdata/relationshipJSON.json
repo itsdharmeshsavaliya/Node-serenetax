@@ -1,0 +1,22 @@
+[{
+    "relationship_id": 1,
+    "relationship": "Daughter"
+}, {
+    "relationship_id": 2,
+    "relationship": "Son"
+}, {
+    "relationship_id": 3,
+    "relationship": "Father"
+}, {
+    "relationship_id": 4,
+    "relationship": "Mother"
+}, {
+    "relationship_id": 5,
+    "relationship": "Father-in-Law"
+}, {
+    "relationship_id": 6,
+    "relationship": "Mother-in-law"
+}, {
+    "relationship_id": 7,
+    "relationship": "Other"
+}]

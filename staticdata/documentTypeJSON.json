@@ -1,0 +1,55 @@
+[{
+    "document_type_id": 1,
+    "document_type": "W2-wage statement"
+}, {
+    "document_type_id": 2,
+    "document_type": "Personal id proof"
+}, {
+    "document_type_id": 3,
+    "document_type": "1099 INT"
+}, {
+    "document_type_id": 4,
+    "document_type": "1099 DIV"
+}, {
+    "document_type_id": 5,
+    "document_type": "1099-G State Tax Refund"
+}, {
+    "document_type_id": 6,
+    "document_type": "1099 MISC ( Self-employed business income )"
+}, {
+    "document_type_id": 7,
+    "document_type": "1099-B Stock Doc"
+}, {
+    "document_type_id": 8,
+    "document_type": "1099 -R"
+}, {
+    "document_type_id": 9,
+    "document_type": "1099-R (401k plan)"
+}, {
+    "document_type_id": 10,
+    "document_type": "5498 -SA"
+}, {
+    "document_type_id": 11,
+    "document_type": "1098-T (Tuition fees)"
+}, {
+    "document_type_id": 12,
+    "document_type": "1098-E (interest on your student loan)"
+}, {
+    "document_type_id": 13,
+    "document_type": "1120-K1"
+}, {
+    "document_type_id": 14,
+    "document_type": "1065-k1"
+}, {
+    "document_type_id": 15,
+    "document_type": "1042-S"
+}, {
+    "document_type_id": 16,
+    "document_type": "Residents of MA - 1099HC"
+}, {
+    "document_type_id": 17,
+    "document_type": "Child/Dependent Care expenses (SSN/Tax ID required)"
+}, {
+    "document_type_id": 18,
+    "document_type": "Other"
+}]

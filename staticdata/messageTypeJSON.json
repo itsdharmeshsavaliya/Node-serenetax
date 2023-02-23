@@ -1,0 +1,13 @@
+[{
+    "message_type_id": 1,
+    "message_type": "General Enquiry"
+}, {
+    "message_type_id": 2,
+    "message_type": "Request"
+}, {
+    "message_type_id": 3,
+    "message_type": "Escalation"
+}, {
+    "message_type_id": 4,
+    "message_type": "Other"
+}]

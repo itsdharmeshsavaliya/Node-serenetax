@@ -1,0 +1,13 @@
+[{
+    "irs_status_id": 1,
+    "do_you_know_type": "SSN"
+}, {
+    "irs_status_id": 2,
+    "do_you_know_type": "ITIN"
+}, {
+    "irs_status_id": 3,
+    "do_you_know_type": "Applying ITIN"
+}, {
+    "irs_status_id": 4,
+    "do_you_know_type": "Renewing ITIN"
+}]

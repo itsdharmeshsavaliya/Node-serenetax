@@ -1,0 +1,10 @@
+[{
+    "account_type_id": 1,
+    "account_type": "Checking Account"
+}, {
+    "account_type_id": 2,
+    "account_type": "Saving Account"
+}, {
+    "account_type_id": 3,
+    "account_type": "Others"
+}]

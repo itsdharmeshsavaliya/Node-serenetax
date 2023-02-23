@@ -1,0 +1,1109 @@
+{
+	"info": {
+		"_postman_id": "06b17d7f-4e21-4bcd-9b19-db2475c1369d",
+		"name": "Serentax",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10359413"
+	},
+	"item": [
+		{
+			"name": "Default API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}",
+					"host": [
+						"{{baseurl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "==== Client APIs ====",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2Njg0MjUyMTYsImV4cCI6MTY5OTk4MjgxNn0.ebcNHDBRQuavUSHqpM1jmByw8dYtelmYjPz_jP5ukV4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/employee/",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Register Info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/register/info",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"register",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dharmesh Setblue13\",\r\n    \"email\": \"setblue.dharmesh13@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"year_of_tax_filing\": \"2022\",\r\n    \"phone\": \"+918889996623\",\r\n    \"alternate_phone\": \"\",\r\n    \"do_you_know\": \"2\",\r\n    \"referral_user\": \"\",\r\n    \"advertisements\": \"Test Info\",\r\n    \"others\": \"\",\r\n    \"preferred_timezone\": \"CST\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/register",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login_from\": \"manually\",\r\n    \"username\": \"setblue.dharmesh1@gmail.com\",\r\n    \"password\": \"123\",\r\n    \"social_auth_id\": \"\",\r\n    \"email\": \"\",\r\n    \"fullname\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/login",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Profile Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/profile",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Edit Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dharmesh J Setblue\",\r\n    \"email\": \"setblue.dharmesh13@gmail.com\",\r\n    \"phone\": \"+918889996623\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/editProfile",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"editProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Change Password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkxOTY4NjIsImV4cCI6MTY2OTgwMTY2Mn0.UliWHiERRnu2on-GnIIimBPx-HAOvROtNEu_ZfnaRzY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"currentPassword\": \"123\",\r\n    \"newPassword\": \"123\",\r\n    \"confirmPassword\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/changepassword",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"changepassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Personal Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/personalinfo?year=2022",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"personalinfo"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Personal Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filing_status_id\": 2,\r\n    \"fullname\": \"Dharmesh M Setblue\",\r\n    \"occupation\": \"\",\r\n    \"email\": \"setblue.dharmesh13@gmail.com\",\r\n    \"preferred_timezone\": \"CST\", \r\n    \"ssn\": \"\",\r\n    \"dob\": \"\",\r\n    \"anniversary_date\": \"\",\r\n    \"visa_type_id\": \"\",\r\n    \"first_entry_date\": \"\",\r\n    \"phone\": \"+918889996623\",\r\n    \"alternate_phone\": \"+918889996666\",\r\n    \"indian_phone\": \"\",\r\n    \"mailing_address\": \"\",\r\n    \"appartment\": \"\",\r\n    \"city\": \"\",\r\n    \"state\": \"\",\r\n    \"zip\": \"\",\r\n    \"is_more_employer\": 0,\r\n    \"employer_info\": \"\",\r\n    \"user_residential_address\" : {\r\n        \"year\": 2021,\r\n        \"data\": [{\r\n            \"state_of_residence\": \"Gujarat\",\r\n            \"from_date\": \"11-01-2022\",\r\n            \"to_date\": \"11-05-2022\"\r\n        }, {\r\n            \"state_of_residence\": \"Maharastra\",\r\n            \"from_date\": \"12-05-2022\",\r\n            \"to_date\": \"30-12-2022\"\r\n        }]\r\n    },\r\n    \"spouse_identity_info\": {\r\n        \"fname\": \"First\", \r\n        \"mname\": \"Middle\", \r\n        \"lname\": \"Last\", \r\n        \"dob\": \"25-02-1995\", \r\n        \"visa_type_id\": 1, \r\n        \"first_entry_date\": \"19-11-2022\", \r\n        \"occupation\": \"Diamond Business\", \r\n        \"irs_status_id\": 1, \r\n        \"ssn_itin\": \"22146545\"\r\n    },\r\n    \"spouse_residential_address\": {\r\n        \"year\": 2022,\r\n        \"data\": [{\r\n            \"state_of_residence\": \"Gujarat1\",\r\n            \"from_date\": \"11-01-2022\",\r\n            \"to_date\": \"11-05-2022\"\r\n        }, {\r\n            \"state_of_residence\": \"Maharastra1\",\r\n            \"from_date\": \"12-05-2022\",\r\n            \"to_date\": \"30-12-2022\"\r\n        }]\r\n    }     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/personalinfo/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"personalinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Dependent Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/dependentinfo?year=2021",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"dependentinfo"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Dependent Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\": \"First\", \r\n    \"mname\": \"Middle\", \r\n    \"lname\": \"Last\", \r\n    \"dob\": \"25-02-1995\",\r\n    \"relationship_id\": 1,\r\n    \"irs_status_id\": \"\",\r\n    \"ssn_itin\": \"\",\r\n    \"visa_type_id\": \"\",\r\n    \"days_stayed\": \"\",\r\n    \"institution_name\": \"\",\r\n    \"institution_tax_id\": \"\",\r\n    \"address\": \"\",\r\n    \"apartment\": \"\",\r\n    \"city\": \"Jamnagar\",\r\n    \"state\": \"Gujarat\",\r\n    \"zip\": \"395006\",\r\n    \"residential_address\": {\r\n        \"year\": 2021,\r\n        \"data\": [{\r\n            \"state_of_residence\": \"Gujarat1\",\r\n            \"from_date\": \"11-01-2022\",\r\n            \"to_date\": \"11-05-2022\"\r\n        }, {\r\n            \"state_of_residence\": \"Maharastra1\",\r\n            \"from_date\": \"12-05-2022\",\r\n            \"to_date\": \"30-12-2022\"\r\n        }]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/dependentinfo/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"dependentinfo",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Bank Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkyODgyNzUsImV4cCI6MTY2OTg5MzA3NX0.G0-PjOPORvYR8ZTy95tOTCdrkDRGUNMJfgqvY7qYJLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/bankdetails",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"bankdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Bank Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2Njg1ODYxNzYsImV4cCI6MTY2OTE5MDk3Nn0.umiquvL5Aw6E9ITIJsHYRDdzPJmH_1cwfEho_rPrOzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account_holder_name\": \"Dharmesh\", \r\n    \"bank_name\": \"ICICI Bank\", \r\n    \"us_bank_routing_number\": \"2124543436\", \r\n    \"us_bank_account_number\": \"335436665543\",\r\n    \"account_type_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/bankdetails/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"bankdetails",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: FBAR Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2Njg1ODYxNzYsImV4cCI6MTY2OTE5MDk3Nn0.umiquvL5Aw6E9ITIJsHYRDdzPJmH_1cwfEho_rPrOzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/fbar",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"fbar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save FBAR Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2Njg1ODYxNzYsImV4cCI6MTY2OTE5MDk3Nn0.umiquvL5Aw6E9ITIJsHYRDdzPJmH_1cwfEho_rPrOzo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ownership\": \"Test\",\r\n    \"bank_financial\": \"\",\r\n    \"street_address\": \"\",\r\n    \"city\": \"Surat\",\r\n    \"state\": \"Gujarat\",\r\n    \"postal_code\": \"395006\",\r\n    \"account_number\": \"123456789\",\r\n    \"type_of_account\": \"Saving\",\r\n    \"if_others\": \"\",\r\n    \"foreign_currency\": \"EUR\",\r\n    \"income_earned\": \"\",\r\n    \"total_income_earned\": \"700000\",\r\n    \"maximum_value_of_account\": \"\",\r\n    \"value_of_account\": \"\",\r\n    \"name_of_joint_owner\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/fbar/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"fbar",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Other Income Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/otherincome/info?year=2021",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"otherincome",
+						"info"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2021"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Other Income",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2021,\r\n    \"interest_dividend\": 0,\r\n    \"business_income\": 1,\r\n    \"sold_stocks\": 1,\r\n    \"sold_espp\": 1,\r\n    \"rental_income\": 1,\r\n    \"earned_interest\": 1,\r\n    \"draw_money_hsa\": 1,\r\n    \"draw_money_ira\": 1,\r\n    \"received_refund\": 1,\r\n    \"received_compensation\": 1,\r\n    \"income_or_losses\": 1,\r\n    \"received_third_party_payment\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/otherincome/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"otherincome",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Expenses Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/expenses/info?year=2022",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"expenses",
+						"info"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Expenses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2022,\r\n    \"healthcare\": 1,\r\n    \"charitable_contributions\": 1,\r\n    \"home_mortgage\": 1,\r\n    \"casualty_theft_losses\": 1,\r\n    \"paid_alimony\": 1,\r\n    \"itemize_returns\": 1,\r\n    \"sales_excise_taxes\": 1,\r\n    \"resident_states\": 1,\r\n    \"family_health_insurance\": 1,\r\n    \"home_work_address\": 1,\r\n    \"hsa\": 1,\r\n    \"ira\": 1,\r\n    \"student_loan\": 1,\r\n    \"tuition_fee\": 1,\r\n    \"health_insurance_covered\": 1,\r\n    \"enrolled_insurance\": 1,\r\n    \"additional_contributions\": 0,\r\n    \"energy_saving_product\": 0,\r\n    \"hybrid_motor_vehicle\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/expenses/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"expenses",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Rental Income Info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/rentalincome/info?year=2022",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"rentalincome",
+						"info"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Save Rental Income",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2022,\r\n    \"building_value\": \"50\",\r\n    \"land_value\": \"500\",\r\n    \"property_address\": \"ABC Address\",\r\n    \"number_of_days_rented\": \"5\",\r\n    \"property_purchased_date\": \"29-11-2022\",\r\n    \"property_holder\": \"name is Xyz\",\r\n    \"income\": \"9000\",\r\n    \"rents_received\": \"500\",\r\n    \"royalties_received\": \"200\",\r\n    \"expenses\": \"300\",\r\n    \"mortgage_interest\": \"20\",\r\n    \"other_interest\": \"50\",\r\n    \"insurance\": \"500\",\r\n    \"repairs\": \"400\",\r\n    \"auto_travel\": \"800\",\r\n    \"advertising\": \"20\",\r\n    \"taxes\": \"5000\",\r\n    \"legal_professional_fees\": \"5600\",\r\n    \"cleaning_maintenance\": \"890\",\r\n    \"commissions\": \"450\",\r\n    \"utilities\": \"210\",\r\n    \"management_fees\": \"50\",\r\n    \"supplies\": \"30\",\r\n    \"other_expenses\": \"500\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/rentalincome/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"rentalincome",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Document List",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/documents?year=2022",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Upload Document",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "year",
+							"value": "2022",
+							"type": "text"
+						},
+						{
+							"key": "document_name",
+							"value": "Aadhar Card1",
+							"type": "text"
+						},
+						{
+							"key": "document_type_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "document_comments",
+							"value": "Document",
+							"type": "text"
+						},
+						{
+							"key": "document_file",
+							"type": "file",
+							"src": "/C:/Users/Dharmesh/Pictures/saree3.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/documents/save",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"documents",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Delete Document",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkzNTIwNDQsImV4cCI6MTY2OTk1Njg0NH0.nFhOkmemw4n_qlrRftAbWaOiVk-A0Q8MgpZuAebCSWQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/documents/delete/2",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"documents",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Referral Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/referralUsers",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"referralUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Add Referral Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiaWF0IjoxNjY5NzkxMDA3LCJleHAiOjE2NzAzOTU4MDd9.ynQr_l-RI1LEhNlDKwkXKHyVSqatVbP7_u0CBsP1kho",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"referral_user\": \"setblue.dharmesh1@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/referralUsers/add",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"referralUsers",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Messages",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwiaWF0IjoxNjY5MjcxNTYxLCJleHAiOjE2Njk4NzYzNjF9.nlQ94ecRVzs0hcxSaNfe_OsmQB03RcoKF-nQdatLxWo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/client/messages",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Send Message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjkyODgyNzUsImV4cCI6MTY2OTg5MzA3NX0.G0-PjOPORvYR8ZTy95tOTCdrkDRGUNMJfgqvY7qYJLw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/messages/send",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"messages",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client: Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2Njg0MjUyMTYsImV4cCI6MTY5OTk4MjgxNn0.ebcNHDBRQuavUSHqpM1jmByw8dYtelmYjPz_jP5ukV4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJpYXQiOjE2Njg0MjY3MjYsImV4cCI6MTY5OTk4NDMyNn0.ZCJ19Z4-ctIho42-2KvlyjyJIIbFL1mlFZ0_AP-czRw\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/client/logout",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"client",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "==== Employee APIs ====",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJpYXQiOjE2Njg0MjUyMTYsImV4cCI6MTY5OTk4MjgxNn0.ebcNHDBRQuavUSHqpM1jmByw8dYtelmYjPz_jP5ukV4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}api/employee/",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee: Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"employee@gmail.com\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/employee/login",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"employee",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee: Home Search Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"year\": 2022,\r\n    \"name\": \"Dharmesh\",\r\n    \"email\": \"employee@gmail.com\",\r\n    \"phone\": \"\",\r\n    \"filing_id\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}api/employee/home/searchclient",
+					"host": [
+						"{{baseurl}}api"
+					],
+					"path": [
+						"employee",
+						"home",
+						"searchclient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,16 @@
+[{
+    "filing_status_id": 1,
+    "filing_status": "Single"
+}, {
+    "filing_status_id": 2,
+    "filing_status": "Married filing jointly"
+}, {
+    "filing_status_id": 3,
+    "filing_status": "Married filing seperately"
+}, {
+    "filing_status_id": 4,
+    "filing_status": "Head of Household"
+}, {
+    "filing_status_id": 5,
+    "filing_status": "Divorce"
+}]

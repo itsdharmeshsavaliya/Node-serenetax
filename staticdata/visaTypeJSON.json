@@ -1,0 +1,37 @@
+[{
+    "visa_type_id": 1,
+    "filing_status": "F1"
+}, {
+    "visa_type_id": 2,
+    "filing_status": "F2"
+}, {
+    "visa_type_id": 3,
+    "filing_status": "H1"
+}, {
+    "visa_type_id": 4,
+    "filing_status": "H4"
+}, {
+    "visa_type_id": 5,
+    "filing_status": "L1"
+}, {
+    "visa_type_id": 6,
+    "filing_status": "L2"
+}, {
+    "visa_type_id": 7,
+    "filing_status": "B1"
+}, {
+    "visa_type_id": 8,
+    "filing_status": "B2"
+}, {
+    "visa_type_id": 9,
+    "filing_status": "J1"
+}, {
+    "visa_type_id": 10,
+    "filing_status": "J4"
+}, {
+    "visa_type_id": 11,
+    "filing_status": "U.S Citizen"
+}, {
+    "visa_type_id": 12,
+    "filing_status": "Green Card"
+}]

@@ -1,0 +1,16 @@
+[{
+    "preferred_timezone": "CST",
+    "preferred_timezone_name": "Central Standard Time (CST)"
+}, {
+    "preferred_timezone": "EST",
+    "preferred_timezone_name": "Eastern Standard Time (EST)"
+}, {
+    "preferred_timezone": "MST",
+    "preferred_timezone_name": "Mountain Standard Time (MST)"
+}, {
+    "preferred_timezone": "PST",
+    "preferred_timezone_name": "Pacific Standard Time (PST)"
+}, {
+    "preferred_timezone": "IST",
+    "preferred_timezone_name": "Indian Standard Time (IST)"
+}]
